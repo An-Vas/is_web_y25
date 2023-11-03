@@ -1,0 +1,52 @@
+p {
+  font-family: 'Sitka Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sitka.ttc'),
+  padding-left: 20px;
+}
+
+.menuItem {
+  font-family: 'Sitka Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sitka.ttc'),
+  padding-left: 20px;
+}
+
+.menuItemSelected {
+  color: rgba(37, 170, 150, 1)
+}
+
+H1 { 
+  text-align: center; 
+  line-height: 50%;
+  text-transform: uppercase;
+}
+
+.mainPageHeader {
+  font-family: 'Sitka Text';
+  src: local('Sitka.ttc'),
+  text-align: center;
+}
+
+.splitter{
+  display: block;
+  margin: 0 auto;
+  width: 1000px
+}
+
+table {
+  font-family: 'Sitka Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sitka.ttc'),
+}
+.weekDay {
+  font-weight: bold;
+  background: rgba(37,237,170,0.6)
+}
+.taskDone {
+  text-decoration: line-through;
+  text-decoration-style: double;
+}

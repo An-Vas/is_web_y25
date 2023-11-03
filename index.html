@@ -2,38 +2,40 @@
  <html lang="ru">
   <head>
    <title>Календарь</title>
+   <link rel="stylesheet" href="stylelab2.css">
    <meta charset="utf-8">
    <meta name="keywords" content="Календарь, список дел, тудушка, calendar, todolist, to do, to do list">
   </head>
   <body>
    <header>
-    <h1>
+    <h1 class="mainPageHeader">
       Календарь
     </h1>
+    <img  class="splitter" src="splitter.png">
    </header>
    <main>
     <table width="100%" cellspacing="0" cellpadding="5">
      <tr> 
      <td width="200" valign="top">
       <nav>
-	<p>
+	<p class="menuItem">
 	День
 	</p>
-	<p>
+	<p class="menuItem menuItemSelected">
 	Неделя
 	</p>
-	<p>
+	<p class="menuItem">
 	Месяц
 	</p>
       </nav>
       <nav>
-	<p>
+	<p class="menuItem">
 	Проект 1
 	</p>
-	<p>
+	<p class="menuItem">
 	Проект 2
 	</p>
-	<p>
+	<p class="menuItem">
 	Купить
 	</p>
       </nav>
@@ -44,7 +46,7 @@
      </td><td valign="top"> 
       <table width="100%">
 	<tr>
-	<td valign="top">Понедельник
+	<td valign="top"><p class="table weekDay">Понедельник</p>
 	<ul>
 	<li>Начать <i>неделю</i></li>
 	<li>Сделать важное дело
@@ -56,52 +58,39 @@
 	</li>
 	</ul>
 	</td>
-	<td valign="top">Вторник
+	<td valign="top"><p class="table weekDay">Вторник</p>
 	<ul>
 	<li>Пережить день</li>
 	</ul>
 	</td>
-	<td valign="top">Среда
+	<td valign="top"><p class="table weekDay">Среда</p>
 	<ul>
 	<li>Пережить день</li>
 	</ul>
 	</td>
-	<td valign="top">Четверг
+	<td valign="top"><p class="table weekDay">Четверг</p>
 	<ul>
 	<li>Пережить день</li>
 	</ul>
 	</td>
 	</tr>
 	<tr>
-	<td valign="top">Пятница
+	<td valign="top"><p class="table weekDay">Пятница</p>
 	<ul>
 	<li>Пережить день</li>
 	</ul>
 	</td>
-	<td valign="top">Суббота
+	<td valign="top"><p class="table weekDay">Суббота</p>
 	<ul>
 	<li>Пережить день</li>
 	</ul>
 	</td>
-	<td valign="top">
-	Восресенье
-	<pre> 
-                                        
-  ,ad8888ba,   88           88  88  88  
- d8"'    `"8b  88           ""  88  88  
-d8'            88               88  88  
-88             88,dPPYba,   88  88  88  
-88             88P'    "8a  88  88  88  
-Y8,            88       88  88  88  88  
- Y8a.    .a8P  88       88  88  88  88  
-  `"Y8888Y"'   88       88  88  88  88  
-                                        
-                                                 
-	</pre>
+	<td valign="top"><p class="table weekDay">Восресенье</p>
+	
 	</td>
-	<td valign="top">Вся неделя
+	<td valign="top"><p class="table weekDay">Вся неделя</p>
 	<ul>
-	<li><del>Сделать 1 лабу по web</del></li>
+	<li class="table taskDone">Сделать 1 лабу по web</li>
 	</ul>
 	</td>
 	</tr>
