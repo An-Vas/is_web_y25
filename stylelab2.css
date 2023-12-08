@@ -24,6 +24,11 @@ H1 {
   text-transform: uppercase;
 }
 
+.mainCalendarTitle {
+  position: absolute;
+  top: 0;
+}
+
 .mainPageHeader {
   font-family: 'Sitka Text';
   src: local('Sitka.ttc'),
@@ -37,16 +42,46 @@ H1 {
 }
 
 table {
+  table-layout: fixed;
+  border-collapse: collapse;
   font-family: 'Sitka Text';
   font-style: normal;
   font-weight: normal;
-  src: local('Sitka.ttc'),
+  src: local('Sitka.ttc');
 }
 .weekDay {
   font-weight: bold;
-  background: rgba(37,237,170,0.6)
+  background: rgba(37,237,170,0.6);
+  margin-top: -2px;
+}
+.weekCalendarTable {
+  border: 3px solid black;
 }
 .taskDone {
   text-decoration: line-through;
   text-decoration-style: double;
 }
+
+td {
+  overflow: hidden;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+@media screen and (max-width: 800px) {
+    .menuItem {
+        display: none;
+    }
+    .quote {
+        display: none;
+    }
+}
+
+
+
