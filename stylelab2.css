@@ -6,15 +6,29 @@ p {
   padding-left: 20px;
 }
 
-.menuItem {
+a {
   font-family: 'Sitka Text';
   font-style: normal;
   font-weight: normal;
   src: local('Sitka.ttc'),
   padding-left: 20px;
+  text-decoration:none;
+  color: rgba(0, 0, 0, 1)
 }
 
-.menuItemSelected {
+.menu_item {
+  font-family: 'Sitka Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sitka.ttc');
+  padding-left: 20px;
+}
+
+.menu_item:hover {
+  text-decoration: underline;
+}
+
+.menu_item.menu_item_selected {
   color: rgba(37, 170, 150, 1)
 }
 
@@ -29,14 +43,14 @@ H1 {
   top: 0;
 }
 
-.mainPageHeader {
+.main_page_header {
   font-family: 'Sitka Text';
   src: local('Sitka.ttc'),
   text-align: center;
 }
 
 .splitter{
-  display: block;
+  display: none;
   margin: 0 auto;
   width: 1000px
 }
@@ -54,7 +68,7 @@ table {
   background: rgba(37,237,170,0.6);
   margin-top: -2px;
 }
-.weekCalendarTable {
+.week_calendar_table {
   border: 3px solid black;
 }
 .taskDone {
@@ -75,7 +89,7 @@ tbody tr:nth-child(even) {
 }
 
 @media screen and (max-width: 800px) {
-    .menuItem {
+    .menu_item {
         display: none;
     }
     .quote {
@@ -84,4 +98,80 @@ tbody tr:nth-child(even) {
 }
 
 
+#preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #ff6b6b;
+  animation: spin 1s infinite;
+}
 
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+input[type="text"] {
+  border: 1px solid #cccccc; 
+  border-radius: 3px; 
+  outline: none; 
+  height: 24px;
+  width: 300px; 
+  font-size: 16px;
+}
+
+/* Дизайн чекбоксов по туториалу из интернета */
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: rgba(15,150,100,0.6);
+  background-color: rgba(37,237,170,1);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: rgb(103, 211, 175);
+}
+
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color:rgb(177, 247, 223);
+  border-color: rgb(132, 209, 182);
+}
+
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+}

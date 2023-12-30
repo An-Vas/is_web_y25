@@ -1,6 +1,8 @@
  <!DOCTYPE HTML>
  <html lang="ru">
   <head>
+   <script src="scripts/time.js"></script>
+   <script src="scripts/hover_menu_items.js"></script>
    <title class="mainCalendarTitle">Календарь</title>
    <link rel="stylesheet" href="stylelab2.css">
    <meta charset="utf-8">
@@ -8,7 +10,7 @@
   </head>
   <body>
    <header>
-    <h1 class="mainPageHeader">
+    <h1 class="main_page_header">
       Календарь
     </h1>
     <img  class="splitter" src="splitter.png">
@@ -16,35 +18,20 @@
    <main>
     <table width="100%" cellspacing="0" cellpadding="5">
      <tr> 
-     <td width="200" valign="top">
+     <td width="100" valign="top">
       <nav>
-	<p class="menuItem">
+	<a class="menu_item"  href="index_day.html">
 	День
-	</p>
-	<p class="menuItem menuItemSelected">
+	</a>
+	<a class="menu_item menu_item_selected" href="index.html">
 	Неделя
-	</p>
-	<p class="menuItem">
+	</a>
+	<a class="menu_item" href="index_month.html">
 	Месяц
-	</p>
-      </nav>
-      <nav>
-	<p class="menuItem">
-	Проект 1
-	</p>
-	<p class="menuItem">
-	Проект 2
-	</p>
-	<p class="menuItem">
-	Купить
-	</p>
-      </nav>
-      <blockquote class="quote">
-      <p>Всё будет хорошо</p>
-      <cite>Типа <em>мотивирующая</em> цитата</cite>
-      </blockquote>
+	</a>
+      
      </td><td valign="top"> 
-      <table class="table weekCalendarTable" width="100%">
+      <table class="table week_calendar_table" width="100%">
 	<tr>
 	<td valign="top"><p class="table weekDay">Понедельник</p>
 	<ul>
@@ -90,7 +77,10 @@
 	</td>
 	<td valign="top"><p class="table weekDay">Вся неделя</p>
 	<ul>
-	<li class="table taskDone">Сделать 1 лабу по web</li>
+	<li class="table taskDone">Сделать 4 лабу по web</li>
+	<li class="table taskDone">Сделать 5 лабу по web</li>
+	<li class="table taskDone">Сделать 6 лабу по web</li>
+	<li>Поспать</li>
 	</ul>
 	</td>
 	</tr>
@@ -99,6 +89,10 @@
      </tr>
   </table>
    </main>
-   <footer></footer>
+   <footer>
+	<p class="timeStatistics">
+	Статистика
+	</p>
+   </footer>
   </body>
 </html>

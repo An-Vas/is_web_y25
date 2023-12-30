@@ -1,6 +1,8 @@
  <!DOCTYPE HTML>
  <html lang="ru">
   <head>
+   <script src="scripts/hover_menu_items.js"></script>
+   <script src="scripts/todolist_save.js"></script>
    <title class="mainCalendarTitle">Календарь</title>
    <link rel="stylesheet" href="stylelab2.css">
    <meta charset="utf-8">
@@ -8,43 +10,34 @@
   </head>
   <body>
    <header>
-    <h1 class="mainPageHeader">
-      Календарь
+    <h1 class="main_page_header">
+      Планы на день
     </h1>
     <img  class="splitter" src="splitter.png">
    </header>
    <main>
     <table width="100%" cellspacing="0" cellpadding="5">
      <tr> 
-     <td width="200" valign="top">
+     <td width="100" valign="top">
       <nav>
-	<p class="menuItem">
+	<a class="menu_item menu_item_selected" href="index_day.html">
 	День
-	</p>
-	<p class="menuItem menuItemSelected">
+      </a>
+	<a class="menu_item" href="index.html">
 	Неделя
-	</p>
-	<p class="menuItem">
+      </a>
+	<a class="menu_item" href="index_month.html">
 	Месяц
-	</p>
+      </a>
       </nav>
-      <nav>
-	<p class="menuItem">
-	Проект 1
-	</p>
-	<p class="menuItem">
-	Проект 2
-	</p>
-	<p class="menuItem">
-	Купить
-	</p>
-      </nav>
-      <blockquote class="quote">
-      <p>Всё будет хорошо</p>
-      <cite>Типа <em>мотивирующая</em> цитата</cite>
-      </blockquote>
+     
      </td><td valign="top"> 
-      
+            <form id="\form">
+                  <label for="task" id="inputtasklabel">Добавить дело:</label>
+                  <input type="text" id="task">
+                  <button type="submit" id="submit">Добавить</button>
+            </form>
+            <div id="list"></div>
      </td>
      </tr>
   </table>

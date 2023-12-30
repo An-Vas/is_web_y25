@@ -1,6 +1,7 @@
  <!DOCTYPE HTML>
  <html lang="ru">
   <head>
+   <script src="scripts/month_plans_preloader.js" defer></script>
    <title class="mainCalendarTitle">Календарь</title>
    <link rel="stylesheet" href="stylelab2.css">
    <meta charset="utf-8">
@@ -8,44 +9,33 @@
   </head>
   <body>
    <header>
-    <h1 class="mainPageHeader">
-      Календарь
+    <h1 class="main_page_header">
+      Сделать за месяц
     </h1>
     <img  class="splitter" src="splitter.png">
    </header>
    <main>
     <table width="100%" cellspacing="0" cellpadding="5">
      <tr> 
-     <td width="200" valign="top">
+     <td width="100" valign="top">
       <nav>
-	<p class="menuItem">
-	День
-	</p>
-	<p class="menuItem menuItemSelected">
-	Неделя
-	</p>
-	<p class="menuItem">
-	Месяц
-	</p>
+            <a class="menu_item" href="index_day.html">
+            День
+            </a>
+            <a class="menu_item" href="index.html">
+            Неделя
+            </a>
+            <a class="menu_item menu_item_selected" href="index_month.html">
+            Месяц
+            </a>
       </nav>
-      <nav>
-	<p class="menuItem">
-	Проект 1
-	</p>
-	<p class="menuItem">
-	Проект 2
-	</p>
-	<p class="menuItem">
-	Купить
-	</p>
-      </nav>
-      <blockquote class="quote">
-      <p>Всё будет хорошо</p>
-      <cite>Типа <em>мотивирующая</em> цитата</cite>
-      </blockquote>
-     </td><td valign="top"> 
       
      </td>
+     <td valign="top"> 
+      <div class="preloader" id="preloader"></div>
+      <div class="content" id="content"></div>
+     </td>
+    
      </tr>
   </table>
    </main>
