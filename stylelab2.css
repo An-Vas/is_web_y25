@@ -2,7 +2,7 @@ p {
   font-family: 'Sitka Text';
   font-style: normal;
   font-weight: normal;
-  src: local('Sitka.ttc'),
+  src: local('Sitka.ttc');
   padding-left: 20px;
 }
 
@@ -10,7 +10,7 @@ a {
   font-family: 'Sitka Text';
   font-style: normal;
   font-weight: normal;
-  src: local('Sitka.ttc'),
+  src: local('Sitka.ttc');
   padding-left: 20px;
   text-decoration:none;
   color: rgba(0, 0, 0, 1)
@@ -45,7 +45,7 @@ H1 {
 
 .main_page_header {
   font-family: 'Sitka Text';
-  src: local('Sitka.ttc'),
+  src: local('Sitka.ttc');
   text-align: center;
 }
 
