@@ -13,7 +13,7 @@ a {
   src: local('Sitka.ttc');
   padding-left: 20px;
   text-decoration:none;
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 1);
 }
 
 .menu_item {
@@ -29,7 +29,7 @@ a {
 }
 
 .menu_item.menu_item_selected {
-  color: rgba(37, 170, 150, 1)
+  color: rgba(37, 170, 150, 1);
 }
 
 H1 { 
@@ -52,7 +52,7 @@ H1 {
 .splitter{
   display: none;
   margin: 0 auto;
-  width: 1000px
+  width: 1000px;
 }
 
 table {
